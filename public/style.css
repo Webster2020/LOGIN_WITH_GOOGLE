@@ -46,6 +46,24 @@ textarea {
   display: block;
 }
 
+.avatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: block;
+  font-size: 1rem;
+}
+
 button {
   background: #0064e7;
   border: none;

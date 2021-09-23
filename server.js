@@ -26,7 +26,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', (req, res) => {
+  req.logout(); //new
   res.render('index');
+});
+
+//new
+app.get('/auth/logout', (req, res) => {
+  res.render('logout');
 });
 
 // const authRoutes = require('./routes/auth.routes');
